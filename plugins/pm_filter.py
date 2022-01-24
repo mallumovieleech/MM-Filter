@@ -39,7 +39,7 @@ async def next_page(bot, query):
 
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("oKda", show_alert=True)
+        return await query.answer("മറ്റുള്ളവർ search ആക്കിയ ലിസ്റ്റില് കൈ ഇടാതെ സ്വന്തമായി search ചെയ്തിട്ട് അതിൽ നോക്കുക. Don't Try to Click on Others Searched file. Search it yourself first like Others", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -112,7 +112,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("okDa", show_alert=True)
+        return await query.answer("മറ്റുള്ളവർ search ആക്കിയ ലിസ്റ്റില് കൈ ഇടാതെ സ്വന്തമായി search ചെയ്തിട്ട് അതിൽ നോക്കുക. Don't Try to Click on Others Searched file. Search it yourself first like Others", show_alert=True)
     if movie_  == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
@@ -359,9 +359,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption
                     )
-                await query.answer('Check PM, I have sent files in pm',show_alert = True)
+                await query.answer('ഇനി ജോയിൻ ആയ ഈ ബോട്ടിൽ @MM_Filtertopm_bot പോയാൽ മതി. മൂവി ഫയൽ അവിടെ വന്നിട്ടുണ്ടാകും.Check PM of the this Bot, I have sent files in pm',show_alert = True)
         except UserIsBlocked:
-            await query.answer('Unblock the bot mahn !',show_alert = True)
+            await query.answer('ആദ്യം ഈ ബോട്ടിൽ പോയിട്ട് ജോയിൻ ആവുക.അതിനു ശേഷം ഇവിടെ മൂവിയുടെ പേരുള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.👉@MM_Filtertopm_bot👈. First Go to this bot and Join in it and then come to group and click movie here!',show_alert = True)
         except PeerIdInvalid:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={file_id}")
         except Exception as e:
@@ -398,10 +398,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('👉𝚂𝙴𝙰𝚁𝙲𝙷 𝙼𝙾𝚅𝙸𝙴𝚂 & 𝚂𝙴𝚁𝙸𝙴𝚂 𝙵𝚁𝙾𝙼 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿', url=f'https://t.me/+6MW3sRKDdQIyOWJl')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('🔍 Search', url=f'https://t.me/+6MW3sRKDdQIyOWJl'),
+            InlineKeyboardButton('🤖 Updates', url=f'https://t.me/+6MW3sRKDdQIyOWJl')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -431,7 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria'),
+            InlineKeyboardButton('🤖 Updates', url=f'https://t.me/+6MW3sRKDdQIyOWJl'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -641,7 +641,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"<b>ആദ്യം ഈ ബോട്ടിൽ പോയിട്ട് ജോയിൻ ആവുക. അതിനു ശേഷം ഇവിടെ മൂവി ക്ലിക്ക് ചെയ്യുക.</b>\nബോട്ട് 👉@MM_Filtertopm_bot👈. Here is what i found for your query👇👇👇👇 {search}"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -665,7 +665,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("<b>നിങ്ങൾ സേർച്ച് ആക്കിയ മൂവി താഴെ കാണുന്ന ലിസ്റ്റില് ഉണ്ടെങ്കിൽ നിങ്ങൾക്ക് വേണ്ട സൈസ് നോക്കി ബട്ടൺ പ്രസ് ചെയ്യുക. ഇനി മൂവി ഇല്ലങ്കിൽ ഗൂഗിളിൽ പോയിട്ട് മൂവിയുടെ വർഷം നോക്കി ഇവിടെ ഒന്നൂടെ ടൈപ്പ് ചെയ്യുക മൂവിയുടെ പേരും വർഷവും ടൈപ്പ് ചെയ്യുക.</b>I couldn't find any movie in that name.")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -691,7 +691,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("<b>അങ്ങനെ ഒരു മൂവി നങ്ങളുടെ ഡാറ്റാബേസിൽ കാണുന്നില്ല. ചിലപ്പോൾ സ്പെല്ലിംഗ് തെറ്റായിരിക്കും.ഗൂഗിൾ നോക്കിയിട്ട് മൂവിയുടെ വർഷവും കൂട്ടി ഒന്നോടെ സ്പെല്ലിംഗ് തെറ്റാതെ സെർച്ച് ആക്കുക.</b>I couldn't find anything related to that. Check your spelling")
         await asyncio.sleep(8)
         await k.delete()
         return
