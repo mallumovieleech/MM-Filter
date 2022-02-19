@@ -12,10 +12,10 @@ class script(object):
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚅𝟺.𝟷.𝟿 [ 𝙿𝚁𝙾 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Låµrêñ §µmmêr is a private source project. 
-- Source - <a hrefhttps://t.me/+21-626z8Zko3YWU1><b>Bot Repo/Source</b></a>  
+- Source - <a href=https://t.me/+21-626z8Zko3YWU1><b>Bot Repo/Source</b></a>  
 
 <b>DEVS:</b>
-- <a href=https://t.me/MM_Mallu_Movies_Group>🅼🅰🅻🅻🆄 🅼🅾🆅🅸🅴🆂</a>"""
+- <a href=https://t.me/MalluMoviesGroup3>🅼🅰🅻🅻🆄 🅼🅾🆅🅸🅴🆂</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Låµrêñ §µmmêr will respond whenever a keyword is found the message
