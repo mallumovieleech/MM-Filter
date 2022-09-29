@@ -15,7 +15,7 @@ class script(object):
 - Source - <a href=https://t.me/+21-626z8Zko3YWU1><b>Bot Repo/Source</b></a>  
 
 <b>DEVS:</b>
-- <a href=https://t.me/MalluMoviesGroup3>🅼🅰🅻🅻🆄 🅼🅾🆅🅸🅴🆂</a>"""
+- <a href=https://t.me/MalluMoviesGroup2>🅼🅰🅻🅻🆄 🅼🅾🆅🅸🅴🆂</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Låµrêñ §µmmêr will respond whenever a keyword is found the message
