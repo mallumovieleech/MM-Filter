@@ -398,7 +398,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('👉𝚂𝙴𝙰𝚁𝙲𝙷 𝙼𝙾𝚅𝙸𝙴𝚂 & 𝚂𝙴𝚁𝙸𝙴𝚂 𝙵𝚁𝙾𝙼 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿', url=f'https://t.me/+y2bkXyqYNeExYWRl')
+            InlineKeyboardButton('👉𝚂𝙴𝙰𝚁𝙲𝙷 𝙼𝙾𝚅𝙸𝙴𝚂 & 𝚂𝙴𝚁𝙸𝙴𝚂 𝙵𝚁𝙾𝙼 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿', url=f'https://t.me/+UAfifamyqQgyMGFl')
             ],[
             InlineKeyboardButton('🔍 Search', url=f'https://t.me/+UAfifamyqQgyMGFl'),
             InlineKeyboardButton('🤖 Updates', url=f'https://t.me/+UAfifamyqQgyMGFl')
