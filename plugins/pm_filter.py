@@ -359,7 +359,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption
                     )
-                await query.answer('ഇനി ജോയിൻ ആയ ഈ ബോട്ടിൽ @MMBIGGBOSSGROUP_BOT പോയാൽ മതി. മൂവി ഫയൽ അവിടെ വന്നിട്ടുണ്ടാകും.Check PM of the this Bot, I have sent files in pm',show_alert = True)
+                await query.answer('ഇനി ജോയിൻ ആയ ഈ ബോട്ടിൽ @MMBIGGBOSSGROUP_BOT പോയാൽ മതി. എപിസോഡ് ഫയൽ അവിടെ വന്നിട്ടുണ്ടാകും.Check PM of the this Bot, I have sent files in pm',show_alert = True)
         except UserIsBlocked:
             await query.answer('ആദ്യം ഈ ബോട്ടിൽ പോയിട്ട് ജോയിൻ ആവുക.അതിനു ശേഷം ഇവിടെ എപിസോടിൻ്റെ പേരുള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.👉@MMBIGGBOSSGROUP_BOT👈. First Go to this bot and Join in it and then come to group and click Episodes list here!',show_alert = True)
         except PeerIdInvalid:
