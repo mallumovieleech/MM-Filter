@@ -1,5 +1,5 @@
 {
-    "name": "Låµrêñ §µmmêr",
+    "name": "ᏰᎥᎶᎶ ᏰᎧᏕᏕ",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/mbrhdrg01/MM-Filter",
-    "repository": "https://github.com/mbrhdrg01/MM-Filter",
+    "website": "https://github.com/mallumovieleech/MM-Filter",
+    "repository": "https://github.com/mallumovieleech/MM-Filter",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
