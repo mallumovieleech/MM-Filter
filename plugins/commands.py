@@ -40,7 +40,7 @@ async def start(client, message):
             InlineKeyboardButton('𝚂𝙴𝙰𝚁𝙲𝙷 Episodes 𝙵𝚁𝙾𝙼 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿👈', url=f'https://t.me/+BmYsCpTjuG82Yjc0')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/+UAfifamyqQgyMGFl')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/+BmYsCpTjuG82Yjc0')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
