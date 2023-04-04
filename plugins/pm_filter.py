@@ -359,9 +359,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption
                     )
-                await query.answer('ഇനി ജോയിൻ ആയ ഈ ബോട്ടിൽ @MM_Filtertopm_bot പോയാൽ മതി. മൂവി ഫയൽ അവിടെ വന്നിട്ടുണ്ടാകും.Check PM of the this Bot, I have sent files in pm',show_alert = True)
+                await query.answer('ഇനി ജോയിൻ ആയ ഈ ബോട്ടിൽ @MMBIGGBOSSGROUP_BOT പോയാൽ മതി. മൂവി ഫയൽ അവിടെ വന്നിട്ടുണ്ടാകും.Check PM of the this Bot, I have sent files in pm',show_alert = True)
         except UserIsBlocked:
-            await query.answer('ആദ്യം ഈ ബോട്ടിൽ പോയിട്ട് ജോയിൻ ആവുക.അതിനു ശേഷം ഇവിടെ മൂവിയുടെ പേരുള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.👉@MM_Filtertopm_bot👈. First Go to this bot and Join in it and then come to group and click movie here!',show_alert = True)
+            await query.answer('ആദ്യം ഈ ബോട്ടിൽ പോയിട്ട് ജോയിൻ ആവുക.അതിനു ശേഷം ഇവിടെ എപിസോടിൻ്റെ പേരുള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.👉@MMBIGGBOSSGROUP_BOT👈. First Go to this bot and Join in it and then come to group and click Episodes list here!',show_alert = True)
         except PeerIdInvalid:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={file_id}")
         except Exception as e:
@@ -398,10 +398,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('👉𝚂𝙴𝙰𝚁𝙲𝙷 𝙼𝙾𝚅𝙸𝙴𝚂 & 𝚂𝙴𝚁𝙸𝙴𝚂 𝙵𝚁𝙾𝙼 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿', url=f'https://t.me/+UAfifamyqQgyMGFl')
+            InlineKeyboardButton('👉𝚂𝙴𝙰𝚁𝙲𝙷 Episodes 𝙵𝚁𝙾𝙼 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿', url=f'https://t.me/+UAfifamyqQgyMGFl')
             ],[
-            InlineKeyboardButton('🔍 Search', url=f'https://t.me/+UAfifamyqQgyMGFl'),
-            InlineKeyboardButton('🤖 Updates', url=f'https://t.me/+UAfifamyqQgyMGFl')
+            InlineKeyboardButton('🔍 Search', url=f'https://t.me/+BmYsCpTjuG82Yjc0'),
+            InlineKeyboardButton('🤖 Updates', url=f'https://t.me/+BmYsCpTjuG82Yjc0')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -431,7 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🤖 Updates', url=f'https://t.me/+UAfifamyqQgyMGFl'),
+            InlineKeyboardButton('🤖 Updates', url=f'https://t.me/+BmYsCpTjuG82Yjc0'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -641,7 +641,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>ആദ്യം ഈ ബോട്ടിൽ പോയിട്ട് ജോയിൻ ആവുക. അതിനു ശേഷം ഇവിടെ മൂവി ക്ലിക്ക് ചെയ്യുക.</b>\nബോട്ട് 👉@MM_Filtertopm_bot👈. Here is what i found for your query👇👇👇👇 {search}"
+        cap = f"<b>ആദ്യം ഈ ബോട്ടിൽ പോയിട്ട് ജോയിൻ ആവുക. അതിനു ശേഷം ഇവിടെ എപിസോഡിൻ്റെ ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.</b>\nബോട്ട് 👉@MMBIGGBOSSGROUP_BOT👈. Here is what i found for your query👇👇👇👇 {search}"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -665,7 +665,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("<b>നിങ്ങൾ സേർച്ച് ആക്കിയ മൂവി താഴെ കാണുന്ന ലിസ്റ്റില് ഉണ്ടെങ്കിൽ നിങ്ങൾക്ക് വേണ്ട സൈസ് നോക്കി ബട്ടൺ പ്രസ് ചെയ്യുക. ഇനി മൂവി ഇല്ലങ്കിൽ ഗൂഗിളിൽ പോയിട്ട് മൂവിയുടെ വർഷം നോക്കി ഇവിടെ ഒന്നൂടെ ടൈപ്പ് ചെയ്യുക മൂവിയുടെ പേരും വർഷവും ടൈപ്പ് ചെയ്യുക.</b>I couldn't find any movie in that name.")
+        k = await msg.reply("<b>നിങ്ങൾ സേർച്ച് ആക്കിയ എപിസോട് താഴെ കാണുന്ന ലിസ്റ്റില് ഉണ്ടെങ്കിൽ നിങ്ങൾക്ക് വേണ്ട സൈസ് നോക്കി ബട്ടൺ പ്രസ് ചെയ്യുക. ഇനി എപിസോഡ് ഇല്ലങ്കിൽ സീസണും എപിസോടും കൂട്ടി അടിക്കുക ഉദാ : BiggBoss S05E01 👈ഇത് പോലെ..</b>I couldn't find any episode in that name.")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -691,7 +691,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
-        k = await msg.reply("<b>അങ്ങനെ ഒരു മൂവി നങ്ങളുടെ ഡാറ്റാബേസിൽ കാണുന്നില്ല. ചിലപ്പോൾ സ്പെല്ലിംഗ് തെറ്റായിരിക്കും.ഗൂഗിൾ നോക്കിയിട്ട് മൂവിയുടെ വർഷവും കൂട്ടി ഒന്നോടെ സ്പെല്ലിംഗ് തെറ്റാതെ സെർച്ച് ആക്കുക.</b>I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("<b>അങ്ങനെ ഒരു എപിസോഡ് നങ്ങളുടെ ഡാറ്റാബേസിൽ കാണുന്നില്ല. ചിലപ്പോൾ സ്പെല്ലിംഗ് തെറ്റായിരിക്കും. സീസണും എപിസോടും കൂട്ടി അടിക്കുക ഉദാ : BiggBoss S05E01 👈ഇത് പോലെ ഒന്നോടെ സ്പെല്ലിംഗ് തെറ്റാതെ സെർച്ച് ആക്കുക.</b>I couldn't find anything related to that. Check your spelling")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -703,7 +703,7 @@ async def advantage_spell_chok(msg):
                 )
             ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("<b>നിങ്ങൾ സേർച്ച് ആക്കിയ മൂവി താഴെ കാണുന്ന ലിസ്റ്റില് ഉണ്ടെങ്കിൽ നിങ്ങൾക്ക് വേണ്ട സൈസ് നോക്കി ബട്ടൺ പ്രസ് ചെയ്യുക. ഇനി മൂവി ഇല്ലങ്കിൽ ഗൂഗിളിൽ പോയിട്ട് മൂവിയുടെ വർഷം നോക്കി ഇവിടെ ഒന്നൂടെ ടൈപ്പ് ചെയ്യുക മൂവിയുടെ പേരും വർഷവും ടൈപ്പ് ചെയ്യുക.</b>I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
+    await msg.reply("<b>നിങ്ങൾ സേർച്ച് ആക്കിയ എപിസോട് താഴെ കാണുന്ന ലിസ്റ്റില് ഉണ്ടെങ്കിൽ നിങ്ങൾക്ക് വേണ്ട സൈസ് നോക്കി ബട്ടൺ പ്രസ് ചെയ്യുക. ഇനി എപിസോഡ് ഇല്ലങ്കിൽ സീസണും എപിസോടും കൂട്ടി അടിക്കുക ഉദാ : BiggBoss S05E01 👈ഇത് പോലെ.</b>I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
     
 
 async def manual_filters(client, message, text=False):
