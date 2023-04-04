@@ -1,9 +1,9 @@
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href='https://t.me/MM_Filtertopm_bot'><b>Ꮭคนrēຖ Şน๓๓ēr</b></a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 & 𝚂𝙴𝚁𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝚂𝙴𝙰𝚁𝙲𝙷 𝙼𝙾𝚅𝙸𝙴𝚂 & 𝚂𝙴𝚁𝙸𝙴𝚂 𝙵𝚁𝙾𝙼 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href='https://t.me/MMBIGGBOSSGROUP_BOT'><b>ᏰᎥᎶᎶ ᏰᎧᏕᏕ</b></a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 Bigg Boss Episodes, 𝙹𝚄𝚂𝚃 𝚂𝙴𝙰𝚁𝙲𝙷 Episodes 𝙵𝚁𝙾𝙼 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: <b>Ꮭคนrēຖ Şน๓๓ēr</b>
+    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: <b>ᏰᎥᎶᎶ ᏰᎧᏕᏕ</b>
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/ZKP143>ZKP143</a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
@@ -11,17 +11,17 @@ class script(object):
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝚅𝙿𝚂
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚅𝟺.𝟷.𝟿 [ 𝙿𝚁𝙾 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
-- Låµrêñ §µmmêr is a private source project. 
+- ᏰᎥᎶᎶ ᏰᎧᏕᏕ is a private source project. 
 - Source - <a href=https://t.me/+21-626z8Zko3YWU1><b>Bot Repo/Source</b></a>  
 
 <b>DEVS:</b>
-- <a href=https://t.me/MalluMoviesGroup2>🅼🅰🅻🅻🆄 🅼🅾🆅🅸🅴🆂</a>"""
+- <a href=https://t.me/MM_BiggBossGroup>🅼🅰🅻🅻🆄 🅼🅾🆅🅸🅴🆂</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Låµrêñ §µmmêr will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. Låµrêñ §µmmêr should have admin privillage.
+1. ᏰᎥᎶᎶ ᏰᎧᏕᏕ should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -32,15 +32,15 @@ class script(object):
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Låµrêñ §µmmêr Supports both url and alert inline buttons.
+- ᏰᎥᎶᎶ ᏰᎧᏕᏕ Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Låµrêñ §µmmêr supports buttons with any telegram media type.
+2. ᏰᎥᎶᎶ ᏰᎧᏕᏕ supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/MM_Filtertopm_bot)</code>
+<code>[Button Text](buttonurl:https://t.me/MMBIGGBOSSGROUP_BOT)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
